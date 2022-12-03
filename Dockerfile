@@ -3,7 +3,7 @@ WORKDIR /usr/app
 COPY package.json .
 RUN npm install
 COPY . .
-EXPOSE 3301
+EXPOSE 80
 CMD ["npm", "run", "start"]
 
 
