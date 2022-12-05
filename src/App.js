@@ -33,7 +33,7 @@ class App extends Component{
         console.log('Received values of form: ', values);
 
         fetch(this.API_URL+'/product/add?name='+values.name+'&price='+values.price+'&description='+values.description, {
-          method: 'GET',
+          method: 'POST',
           headers: {'Content-Type':'application/json'},
           body: JSON.stringify(
             {
